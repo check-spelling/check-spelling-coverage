@@ -26,32 +26,32 @@ https://pjcj.net
 <table>
 <tr><th>line</th><th>stmt</th><th>bran</th><th>cond</th><th>sub</th><th>time</th><th>code</th></tr>
 <tr><td class="h">1</td><td></td><td></td><td></td><td></td><td></td><td class="s">#!/usr/bin/env -S perl</td></tr>
-<tr><td class="h">2</td><td colspan="6"></td></tr><tr><td class="h">3</td><td><div class="c3">2</div><div class="c3">2</div><div class="c3">2</div></td><td></td><td></td><td><div class="c3"><a href="expect-collator-pl--subroutine.html#L3">2</a></div></td><td><div>2188</div><div>2</div><div>1147</div></td><td class="s">use warnings;</td></tr>
-<tr><td class="h">4</td><td colspan="6"></td></tr><tr><td class="h">5</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>88617</div></td><td class="s">my ($collated, $notes) = @ARGV;</td></tr>
-<tr><td class="h">6</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>2</div></td><td class="s">my @words;</td></tr>
-<tr><td class="h">7</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>23</div></td><td class="s">open EXPECT, &#39;&lt;&#39;, $collated;</td></tr>
-<tr><td class="h">8</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>24</div></td><td class="s">while (&lt;EXPECT&gt;) {</td></tr>
-<tr><td class="h">9</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">&nbsp;&nbsp;chomp;</td></tr>
-<tr><td class="h">10</td><td><div class="c3">2</div></td><td><div class="c3" title="T/F"><a href="expect-collator-pl--branch.html#L10">100</a></div></td><td></td><td></td><td><div>7</div></td><td class="s">&nbsp;&nbsp;next unless /(.*) \((.*)\)/;</td></tr>
+<tr><td class="h">2</td><td colspan="6"></td></tr><tr><td class="h">3</td><td><div class="c3">2</div><div class="c3">2</div><div class="c3">2</div></td><td></td><td></td><td><div class="c3"><a href="expect-collator-pl--subroutine.html#L3">2</a></div></td><td><div>2544</div><div>3</div><div>1362</div></td><td class="s">use warnings;</td></tr>
+<tr><td class="h">4</td><td colspan="6"></td></tr><tr><td class="h">5</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>93437</div></td><td class="s">my ($collated, $notes) = @ARGV;</td></tr>
+<tr><td class="h">6</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">my @words;</td></tr>
+<tr><td class="h">7</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>33</div></td><td class="s">open EXPECT, &#39;&lt;&#39;, $collated;</td></tr>
+<tr><td class="h">8</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>32</div></td><td class="s">while (&lt;EXPECT&gt;) {</td></tr>
+<tr><td class="h">9</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>3</div></td><td class="s">&nbsp;&nbsp;chomp;</td></tr>
+<tr><td class="h">10</td><td><div class="c3">2</div></td><td><div class="c3" title="T/F"><a href="expect-collator-pl--branch.html#L10">100</a></div></td><td></td><td></td><td><div>6</div></td><td class="s">&nbsp;&nbsp;next unless /(.*) \((.*)\)/;</td></tr>
 <tr><td class="h">11</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>2</div></td><td class="s">&nbsp;&nbsp;my ($key, $list) = ($1, $2);</td></tr>
-<tr><td class="h">12</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">&nbsp;&nbsp;my @variants = split /, /, $list;</td></tr>
-<tr><td class="h">13</td><td><div class="c3">1</div><div class="c3">2</div></td><td></td><td></td><td></td><td><div>2</div><div>3</div></td><td class="s">&nbsp;&nbsp;@variants = grep { $_ ne $key } @variants;</td></tr>
-<tr><td class="h">14</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>2</div></td><td class="s">&nbsp;&nbsp;push @words, @variants;</td></tr>
+<tr><td class="h">12</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>2</div></td><td class="s">&nbsp;&nbsp;my @variants = split /, /, $list;</td></tr>
+<tr><td class="h">13</td><td><div class="c3">1</div><div class="c3">2</div></td><td></td><td></td><td></td><td><div>2</div><div>4</div></td><td class="s">&nbsp;&nbsp;@variants = grep { $_ ne $key } @variants;</td></tr>
+<tr><td class="h">14</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">&nbsp;&nbsp;push @words, @variants;</td></tr>
 <tr><td class="h">15</td><td></td><td></td><td></td><td></td><td></td><td class="s">}</td></tr>
-<tr><td class="h">16</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>6</div></td><td class="s">close EXPECT;</td></tr>
-<tr><td class="h">17</td><td><div class="c3">2</div><div class="c3">1</div></td><td></td><td></td><td></td><td><div>2</div><div>2</div></td><td class="s">my $pattern = &#39;\`(?:&#39;.join(&#39;|&#39;, map { quotemeta($_) } @words).&#39;)`&#39;;</td></tr>
-<tr><td class="h">18</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>14</div></td><td class="s">open SOURCES, &#39;&lt;&#39;, $notes;</td></tr>
+<tr><td class="h">16</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>7</div></td><td class="s">close EXPECT;</td></tr>
+<tr><td class="h">17</td><td><div class="c3">2</div><div class="c3">1</div></td><td></td><td></td><td></td><td><div>3</div><div>2</div></td><td class="s">my $pattern = &#39;\`(?:&#39;.join(&#39;|&#39;, map { quotemeta($_) } @words).&#39;)`&#39;;</td></tr>
+<tr><td class="h">18</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>15</div></td><td class="s">open SOURCES, &#39;&lt;&#39;, $notes;</td></tr>
 <tr><td class="h">19</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>17</div></td><td class="s">while (&lt;SOURCES&gt;) {</td></tr>
 <tr><td class="h">20</td><td><div class="c3">4</div></td><td><div class="c3" title="T/F"><a href="expect-collator-pl--branch.html#L20">100</a></div></td><td></td><td></td><td><div>9</div></td><td class="s">&nbsp;&nbsp;if ($_ =~ /$pattern/) {</td></tr>
-<tr><td class="h">21</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>7</div></td><td class="s">&nbsp;&nbsp;&nbsp;&nbsp;my $print = 0;</td></tr>
-<tr><td class="h">22</td><td><div class="c3">1</div></td><td><div class="c0" title="T/-"><a href="expect-collator-pl--branch.html#L22">50</a></div></td><td></td><td></td><td><div>2</div></td><td class="s">&nbsp;&nbsp;&nbsp;&nbsp;$print = 1 if s/not a recognized word/ignored by check-spelling because another more general variant is also in expect/;</td></tr>
-<tr><td class="h">23</td><td><div class="c3">1</div></td><td><div class="c0" title="T/-"><a href="expect-collator-pl--branch.html#L23">50</a></div></td><td></td><td></td><td><div>2</div></td><td class="s">&nbsp;&nbsp;&nbsp;&nbsp;$print = 1 if s/unrecognized-spelling/ignored-expect-variant/;</td></tr>
-<tr><td class="h">24</td><td><div class="c3">1</div></td><td><div class="c0" title="-/F"><a href="expect-collator-pl--branch.html#L24">50</a></div></td><td></td><td></td><td><div>1</div></td><td class="s">&nbsp;&nbsp;&nbsp;&nbsp;next unless $print;</td></tr>
+<tr><td class="h">21</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>2</div></td><td class="s">&nbsp;&nbsp;&nbsp;&nbsp;my $print = 0;</td></tr>
+<tr><td class="h">22</td><td><div class="c3">1</div></td><td><div class="c0" title="T/-"><a href="expect-collator-pl--branch.html#L22">50</a></div></td><td></td><td></td><td><div>3</div></td><td class="s">&nbsp;&nbsp;&nbsp;&nbsp;$print = 1 if s/not a recognized word/ignored by check-spelling because another more general variant is also in expect/;</td></tr>
+<tr><td class="h">23</td><td><div class="c3">1</div></td><td><div class="c0" title="T/-"><a href="expect-collator-pl--branch.html#L23">50</a></div></td><td></td><td></td><td><div>1</div></td><td class="s">&nbsp;&nbsp;&nbsp;&nbsp;$print = 1 if s/unrecognized-spelling/ignored-expect-variant/;</td></tr>
+<tr><td class="h">24</td><td><div class="c3">1</div></td><td><div class="c0" title="-/F"><a href="expect-collator-pl--branch.html#L24">50</a></div></td><td></td><td></td><td><div>2</div></td><td class="s">&nbsp;&nbsp;&nbsp;&nbsp;next unless $print;</td></tr>
 <tr><td class="h">25</td><td></td><td></td><td></td><td></td><td></td><td class="s">&nbsp;&nbsp;} else {</td></tr>
 <tr><td class="h">26</td><td><div class="c3">3</div></td><td><div class="c3" title="T/F"><a href="expect-collator-pl--branch.html#L26">100</a></div></td><td></td><td></td><td><div>7</div></td><td class="s">&nbsp;&nbsp;&nbsp;&nbsp;next unless /\(((?:\w+-)+\w+)\)$/;</td></tr>
 <tr><td class="h">27</td><td><div class="c3">2</div></td><td><div class="c3" title="T/F"><a href="expect-collator-pl--branch.html#L27">100</a></div></td><td></td><td></td><td><div>3</div></td><td class="s">&nbsp;&nbsp;&nbsp;&nbsp;next if $1 eq &#39;unrecognized-spelling&#39;;</td></tr>
 <tr><td class="h">28</td><td></td><td></td><td></td><td></td><td></td><td class="s">&nbsp;&nbsp;}</td></tr>
-<tr><td class="h">29</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>5</div></td><td class="s">&nbsp;&nbsp;print;</td></tr>
+<tr><td class="h">29</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>7</div></td><td class="s">&nbsp;&nbsp;print;</td></tr>
 <tr><td class="h">30</td><td></td><td></td><td></td><td></td><td></td><td class="s">}</td></tr>
 <tr><td class="h">31</td><td><div class="c3">2</div></td><td></td><td></td><td></td><td><div>0</div></td><td class="s">close SOURCES;</td></tr>
 </table>
