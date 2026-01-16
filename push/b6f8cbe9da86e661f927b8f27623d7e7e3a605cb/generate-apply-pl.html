@@ -26,21 +26,21 @@ https://pjcj.net
 <table>
 <tr><th>line</th><th>stmt</th><th>bran</th><th>cond</th><th>sub</th><th>time</th><th>code</th></tr>
 <tr><td class="h">1</td><td></td><td></td><td></td><td></td><td></td><td class="s">#!/usr/bin/env perl</td></tr>
-<tr><td class="h">2</td><td><div class="c3">1</div><div class="c3">1</div><div class="c3">1</div></td><td></td><td></td><td><div class="c3"><a href="generate-apply-pl--subroutine.html#L2">1</a></div></td><td><div>1423</div><div>6738</div><div>486</div></td><td class="s">use JSON::PP;</td></tr>
-<tr><td class="h">3</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>38968</div></td><td class="s">my @expect_files = split /\n/, $ENV{expect_files};</td></tr>
-<tr><td class="h">4</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">my @excludes_files = split /\n/, $ENV{excludes_files};</td></tr>
-<tr><td class="h">5</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">my $new_expect_file = $ENV{new_expect_file};</td></tr>
-<tr><td class="h">6</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>3</div></td><td class="s">my $excludes_file = $ENV{excludes_file};</td></tr>
-<tr><td class="h">7</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">my $spelling_config = $ENV{spelling_config};</td></tr>
-<tr><td class="h">8</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>0</div></td><td class="s">my $job = $ENV{THIS_GITHUB_JOB_ID};</td></tr>
+<tr><td class="h">2</td><td><div class="c3">1</div><div class="c3">1</div><div class="c3">1</div></td><td></td><td></td><td><div class="c3"><a href="generate-apply-pl--subroutine.html#L2">1</a></div></td><td><div>1388</div><div>6831</div><div>479</div></td><td class="s">use JSON::PP;</td></tr>
+<tr><td class="h">3</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>38747</div></td><td class="s">my @expect_files = split /\n/, $ENV{expect_files};</td></tr>
+<tr><td class="h">4</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>2</div></td><td class="s">my @excludes_files = split /\n/, $ENV{excludes_files};</td></tr>
+<tr><td class="h">5</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>0</div></td><td class="s">my $new_expect_file = $ENV{new_expect_file};</td></tr>
+<tr><td class="h">6</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>2</div></td><td class="s">my $excludes_file = $ENV{excludes_file};</td></tr>
+<tr><td class="h">7</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>0</div></td><td class="s">my $spelling_config = $ENV{spelling_config};</td></tr>
+<tr><td class="h">8</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">my $job = $ENV{THIS_GITHUB_JOB_ID};</td></tr>
 <tr><td class="h">9</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">$config{&quot;excludes_file&quot;} = $excludes_file;</td></tr>
-<tr><td class="h">10</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">$config{&quot;new_expect_file&quot;} = $new_expect_file;</td></tr>
+<tr><td class="h">10</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>0</div></td><td class="s">$config{&quot;new_expect_file&quot;} = $new_expect_file;</td></tr>
 <tr><td class="h">11</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">$config{&quot;spelling_config&quot;} = $spelling_config;</td></tr>
 <tr><td class="h">12</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">$config{&quot;expect_files&quot;} = \@expect_files;</td></tr>
-<tr><td class="h">13</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">$config{&quot;excludes_files&quot;} = \@excludes_files;</td></tr>
+<tr><td class="h">13</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>2</div></td><td class="s">$config{&quot;excludes_files&quot;} = \@excludes_files;</td></tr>
 <tr><td class="h">14</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">$config{&quot;job&quot;} = $job;</td></tr>
 <tr><td class="h">15</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">$config{&quot;only_check_changed_files&quot;} = $ENV{INPUT_ONLY_CHECK_CHANGED_FILES};</td></tr>
-<tr><td class="h">16</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>1</div></td><td class="s">my $json_canonical = JSON::PP-&gt;new-&gt;canonical([1]);</td></tr>
+<tr><td class="h">16</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>2</div></td><td class="s">my $json_canonical = JSON::PP-&gt;new-&gt;canonical([1]);</td></tr>
 <tr><td class="h">17</td><td><div class="c3">1</div></td><td></td><td></td><td></td><td><div>19</div></td><td class="s">print $json_canonical-&gt;utf8-&gt;encode(\%config);</td></tr>
 </table>
 </body>
